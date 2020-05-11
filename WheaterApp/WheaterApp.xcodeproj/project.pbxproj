@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205DCA7924697A98002A3992 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205DCA7824697A98002A3992 /* CitiesTableViewCell.swift */; };
 		20F19A3B246892A5003DCE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A3A246892A5003DCE54 /* AppDelegate.swift */; };
 		20F19A3D246892A5003DCE54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A3C246892A5003DCE54 /* SceneDelegate.swift */; };
 		20F19A3F246892A5003DCE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A3E246892A5003DCE54 /* ViewController.swift */; };
@@ -16,7 +17,10 @@
 		20F19A4A246892A8003DCE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F19A48246892A8003DCE54 /* LaunchScreen.storyboard */; };
 		20F19A55246892A8003DCE54 /* WheaterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A54246892A8003DCE54 /* WheaterAppTests.swift */; };
 		20F19A642468D4C8003DCE54 /* OpenWeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A632468D4C8003DCE54 /* OpenWeatherApi.swift */; };
-		20F19A662468DCD3003DCE54 /* WheaterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A652468DCD3003DCE54 /* WheaterInfo.swift */; };
+		20F19A662468DCD3003DCE54 /* WeaterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A652468DCD3003DCE54 /* WeaterInfo.swift */; };
+		20F19A6B24697691003DCE54 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A6A24697691003DCE54 /* CitiesViewController.swift */; };
+		5F89BB87DC05126C5DAD0B79 /* Pods_WheaterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DFB6F8BE87119FADD833D1 /* Pods_WheaterApp.framework */; };
+		964ABD6C1F431506FBFFF37F /* Pods_WheaterAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857B1808DBEABD196BB992B1 /* Pods_WheaterAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162933C01B66F91E8F16696D /* Pods-WheaterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterApp.release.xcconfig"; path = "Target Support Files/Pods-WheaterApp/Pods-WheaterApp.release.xcconfig"; sourceTree = "<group>"; };
+		205DCA7824697A98002A3992 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
 		20F19A37246892A5003DCE54 /* WheaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F19A3A246892A5003DCE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F19A3C246892A5003DCE54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +49,13 @@
 		20F19A54246892A8003DCE54 /* WheaterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterAppTests.swift; sourceTree = "<group>"; };
 		20F19A56246892A8003DCE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F19A632468D4C8003DCE54 /* OpenWeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApi.swift; sourceTree = "<group>"; };
-		20F19A652468DCD3003DCE54 /* WheaterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterInfo.swift; sourceTree = "<group>"; };
+		20F19A652468DCD3003DCE54 /* WeaterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaterInfo.swift; sourceTree = "<group>"; };
+		20F19A6A24697691003DCE54 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		857B1808DBEABD196BB992B1 /* Pods_WheaterAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheaterAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		933F1A9AEC175A2ECC7E64B0 /* Pods-WheaterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterApp.debug.xcconfig"; path = "Target Support Files/Pods-WheaterApp/Pods-WheaterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CA623FB3F11565AC847DDE2B /* Pods-WheaterAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WheaterAppTests/Pods-WheaterAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA54A97F6244FCF3E69919DB /* Pods-WheaterAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppTests.release.xcconfig"; path = "Target Support Files/Pods-WheaterAppTests/Pods-WheaterAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5DFB6F8BE87119FADD833D1 /* Pods_WheaterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheaterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F89BB87DC05126C5DAD0B79 /* Pods_WheaterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964ABD6C1F431506FBFFF37F /* Pods_WheaterAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205DCA772469783F002A3992 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				205DCA7824697A98002A3992 /* CitiesTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		20F19A2E246892A4003DCE54 = {
 			isa = PBXGroup;
 			children = (
 				20F19A39246892A5003DCE54 /* WheaterApp */,
 				20F19A53246892A8003DCE54 /* WheaterAppTests */,
 				20F19A38246892A5003DCE54 /* Products */,
+				2FB59C0F96595980A4B51E57 /* Pods */,
+				5E8C324B46F678B44DDE809B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,11 +109,12 @@
 		20F19A39246892A5003DCE54 /* WheaterApp */ = {
 			isa = PBXGroup;
 			children = (
-				20F19A3A246892A5003DCE54 /* AppDelegate.swift */,
-				20F19A3C246892A5003DCE54 /* SceneDelegate.swift */,
+				20F19A6724697098003DCE54 /* AppDelegate */,
+				20F19A612468C81C003DCE54 /* Model */,
 				20F19A5F2468C7DC003DCE54 /* Home */,
-				20F19A40246892A5003DCE54 /* Main.storyboard */,
+				20F19A682469758A003DCE54 /* Cities */,
 				20F19A46246892A8003DCE54 /* Assets.xcassets */,
+				20F19A40246892A5003DCE54 /* Main.storyboard */,
 				20F19A48246892A8003DCE54 /* LaunchScreen.storyboard */,
 				20F19A4B246892A8003DCE54 /* Info.plist */,
 				20F19A43246892A5003DCE54 /* WheaterApp.xcdatamodeld */,
@@ -110,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				20F19A622468C822003DCE54 /* Controller */,
-				20F19A612468C81C003DCE54 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -119,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				20F19A632468D4C8003DCE54 /* OpenWeatherApi.swift */,
-				20F19A652468DCD3003DCE54 /* WheaterInfo.swift */,
+				20F19A652468DCD3003DCE54 /* WeaterInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,6 +156,53 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		20F19A6724697098003DCE54 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				20F19A3C246892A5003DCE54 /* SceneDelegate.swift */,
+				20F19A3A246892A5003DCE54 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		20F19A682469758A003DCE54 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				205DCA772469783F002A3992 /* View */,
+				20F19A692469759F003DCE54 /* Controller */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		20F19A692469759F003DCE54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20F19A6A24697691003DCE54 /* CitiesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FB59C0F96595980A4B51E57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				933F1A9AEC175A2ECC7E64B0 /* Pods-WheaterApp.debug.xcconfig */,
+				162933C01B66F91E8F16696D /* Pods-WheaterApp.release.xcconfig */,
+				CA623FB3F11565AC847DDE2B /* Pods-WheaterAppTests.debug.xcconfig */,
+				DA54A97F6244FCF3E69919DB /* Pods-WheaterAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E8C324B46F678B44DDE809B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5DFB6F8BE87119FADD833D1 /* Pods_WheaterApp.framework */,
+				857B1808DBEABD196BB992B1 /* Pods_WheaterAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F19A59246892A8003DCE54 /* Build configuration list for PBXNativeTarget "WheaterApp" */;
 			buildPhases = (
+				1EAF0704E7D510731433B98A /* [CP] Check Pods Manifest.lock */,
 				20F19A33246892A5003DCE54 /* Sources */,
 				20F19A34246892A5003DCE54 /* Frameworks */,
 				20F19A35246892A5003DCE54 /* Resources */,
+				441511750514B08537AB3507 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F19A5C246892A8003DCE54 /* Build configuration list for PBXNativeTarget "WheaterAppTests" */;
 			buildPhases = (
+				E0E272D7D8984CE8903572E3 /* [CP] Check Pods Manifest.lock */,
 				20F19A4C246892A8003DCE54 /* Sources */,
 				20F19A4D246892A8003DCE54 /* Frameworks */,
 				20F19A4E246892A8003DCE54 /* Resources */,
@@ -228,16 +302,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EAF0704E7D510731433B98A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheaterApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		441511750514B08537AB3507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheaterApp/Pods-WheaterApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheaterApp/Pods-WheaterApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WheaterApp/Pods-WheaterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E272D7D8984CE8903572E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheaterAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20F19A33246892A5003DCE54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205DCA7924697A98002A3992 /* CitiesTableViewCell.swift in Sources */,
 				20F19A45246892A5003DCE54 /* WheaterApp.xcdatamodeld in Sources */,
 				20F19A3F246892A5003DCE54 /* ViewController.swift in Sources */,
 				20F19A3B246892A5003DCE54 /* AppDelegate.swift in Sources */,
 				20F19A642468D4C8003DCE54 /* OpenWeatherApi.swift in Sources */,
-				20F19A662468DCD3003DCE54 /* WheaterInfo.swift in Sources */,
+				20F19A662468DCD3003DCE54 /* WeaterInfo.swift in Sources */,
+				20F19A6B24697691003DCE54 /* CitiesViewController.swift in Sources */,
 				20F19A3D246892A5003DCE54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +536,7 @@
 		};
 		20F19A5A246892A8003DCE54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933F1A9AEC175A2ECC7E64B0 /* Pods-WheaterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +555,7 @@
 		};
 		20F19A5B246892A8003DCE54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162933C01B66F91E8F16696D /* Pods-WheaterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +574,7 @@
 		};
 		20F19A5D246892A8003DCE54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA623FB3F11565AC847DDE2B /* Pods-WheaterAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +597,7 @@
 		};
 		20F19A5E246892A8003DCE54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA54A97F6244FCF3E69919DB /* Pods-WheaterAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

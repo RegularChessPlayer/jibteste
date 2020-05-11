@@ -34,7 +34,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    
     func verifyUserLocation() {
         if CLLocationManager.locationServicesEnabled() {
            switch CLLocationManager.authorizationStatus() {
@@ -57,7 +56,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            print("\(location.coordinate.latitude) (----) " + " \(location.coordinate.longitude)")
             weatherAPi = OpenWeatherApi(lat: "\(location.coordinate.latitude)",
                                         lng: "\(location.coordinate.longitude)")
             getCurrentTemperature()
@@ -69,4 +67,3 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
 }
-
