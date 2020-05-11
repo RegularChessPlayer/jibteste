@@ -22,6 +22,17 @@ class ViewController: UIViewController {
             self.temperature.text = weaterInfo.temperature
         }
     }
-
+    
+    @IBAction func nextCities(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "segueCities", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueCities" {
+            let citiesViewController = segue.destination as? CitiesViewController
+            citiesViewController?.openWeaterApi = weatherAPi
+        }
+    }
+    
 }
 
