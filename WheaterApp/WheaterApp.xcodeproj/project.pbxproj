@@ -15,6 +15,8 @@
 		20F19A47246892A8003DCE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F19A46246892A8003DCE54 /* Assets.xcassets */; };
 		20F19A4A246892A8003DCE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F19A48246892A8003DCE54 /* LaunchScreen.storyboard */; };
 		20F19A55246892A8003DCE54 /* WheaterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A54246892A8003DCE54 /* WheaterAppTests.swift */; };
+		20F19A642468D4C8003DCE54 /* OpenWeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A632468D4C8003DCE54 /* OpenWeatherApi.swift */; };
+		20F19A662468DCD3003DCE54 /* WheaterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19A652468DCD3003DCE54 /* WheaterInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		20F19A50246892A8003DCE54 /* WheaterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheaterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F19A54246892A8003DCE54 /* WheaterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterAppTests.swift; sourceTree = "<group>"; };
 		20F19A56246892A8003DCE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F19A632468D4C8003DCE54 /* OpenWeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApi.swift; sourceTree = "<group>"; };
+		20F19A652468DCD3003DCE54 /* WheaterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +87,7 @@
 			children = (
 				20F19A3A246892A5003DCE54 /* AppDelegate.swift */,
 				20F19A3C246892A5003DCE54 /* SceneDelegate.swift */,
-				20F19A3E246892A5003DCE54 /* ViewController.swift */,
+				20F19A5F2468C7DC003DCE54 /* Home */,
 				20F19A40246892A5003DCE54 /* Main.storyboard */,
 				20F19A46246892A8003DCE54 /* Assets.xcassets */,
 				20F19A48246892A8003DCE54 /* LaunchScreen.storyboard */,
@@ -100,6 +104,32 @@
 				20F19A56246892A8003DCE54 /* Info.plist */,
 			);
 			path = WheaterAppTests;
+			sourceTree = "<group>";
+		};
+		20F19A5F2468C7DC003DCE54 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20F19A622468C822003DCE54 /* Controller */,
+				20F19A612468C81C003DCE54 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20F19A612468C81C003DCE54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20F19A632468D4C8003DCE54 /* OpenWeatherApi.swift */,
+				20F19A652468DCD3003DCE54 /* WheaterInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20F19A622468C822003DCE54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20F19A3E246892A5003DCE54 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +236,8 @@
 				20F19A45246892A5003DCE54 /* WheaterApp.xcdatamodeld in Sources */,
 				20F19A3F246892A5003DCE54 /* ViewController.swift in Sources */,
 				20F19A3B246892A5003DCE54 /* AppDelegate.swift in Sources */,
+				20F19A642468D4C8003DCE54 /* OpenWeatherApi.swift in Sources */,
+				20F19A662468DCD3003DCE54 /* WheaterInfo.swift in Sources */,
 				20F19A3D246892A5003DCE54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
