@@ -20,7 +20,9 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         if let openWeaterApi = self.openWeaterApi{
             openWeaterApi.listCurrentTemperatureNextCities { (weaterInfos) in
-                self.citiesInfo = weaterInfos
+                let treatInfos = weaterInfos.dropFirst()
+                let sortInfos = treatInfos.sorted(by: { Double($0.temperature) ?? 0 > Double($1.temperature) ?? 0 })
+                self.citiesInfo = sortInfos
                 self.tableView.reloadData()
             }
         }else{
@@ -35,7 +37,7 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellCity", for: indexPath) as! CitiesTableViewCell
         cell.city.text = citiesInfo[indexPath.row].city
-        cell.temperature.text = citiesInfo[indexPath.row].temperature
+        cell.temperature.text = citiesInfo[indexPath.row].temperature  + "°C"
         return cell
     }
     
