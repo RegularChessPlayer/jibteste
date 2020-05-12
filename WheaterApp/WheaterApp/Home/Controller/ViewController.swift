@@ -14,11 +14,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var city: UILabel!
     @IBOutlet weak var temperature: UILabel!
     lazy var managerLocation = CLLocationManager()
-    
     var weatherAPi: OpenWeatherApi?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.large
+        loadingIndicator.startAnimating();
+        alert.view.addSubview(loadingIndicator)
+        present(alert, animated: true, completion: nil)
         managerLocation.delegate = self
         managerLocation.requestLocation()
     }
@@ -49,7 +55,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func getCurrentTemperature() {
         weatherAPi?.getCurrentTemperaturePosition { (weaterInfo) in
                self.city.text = weaterInfo.city
-               self.temperature.text = weaterInfo.temperature
+               self.temperature.text = weaterInfo.temperature + "°C"
+               self.dismiss(animated: false, completion: nil)
         }
     }
     

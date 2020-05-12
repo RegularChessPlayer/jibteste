@@ -28,7 +28,8 @@ class OpenWeatherApi: NSObject {
             case .success:
             do{
               guard let dictResponse = try response.result.get() as? Dictionary<String, Any>,
-                    let city = dictResponse["name"] as? String, let coord = dictResponse["coord"] as? Dictionary<String, Any>,let lat = coord["lat"] as? Double, let lon = coord["lon"] as? Double, let main = dictResponse["main"] as? Dictionary<String, Any>, let temp = main["temp"] as? Double else{
+                    let coord = dictResponse["coord"] as? Dictionary<String, Any>,let lat = coord["lat"] as? Double,
+                    let lon = coord["lon"] as? Double, let main = dictResponse["main"] as? Dictionary<String, Any>, let temp = main["temp"] as? Double, let city = dictResponse["name"] as? String else{
                         print("Erro ao desserializar response")
                         return
                     }
@@ -45,19 +46,25 @@ class OpenWeatherApi: NSObject {
     
     func listCurrentTemperatureNextCities(sucess:@escaping(_ listWeaterInfo:Array<WeaterInfo>) -> Void){
         var mockListWeaterApi: Array<WeaterInfo> = []
-        let CNT = 20
+        let CNT = 21
         let QUERYPARAMS = "find?lat=\(lat)&lon=\(lng)&appid=\(APIKEY)&cnt=\(CNT)&units=metric"
-        print(BASE_LIST + QUERYPARAMS)
         AF.request(BASE_LIST + QUERYPARAMS, method: .get).responseJSON { response in
             switch response.result {
             case .success:
             do{
               guard let dictResponse = try response.result.get() as? Dictionary<String, Any>,
-                    let city = dictResponse["name"] as? String, let coord = dictResponse["coord"] as? Dictionary<String, Any>,let lat = coord["lat"] as? Double, let lon = coord["lon"] as? Double, let main = dictResponse["main"] as? Dictionary<String, Any>, let temp = main["temp"] as? Double else{
-                        print("Erro ao desserializar response")
-                        return
+                    let listCities = dictResponse["list"] as? Array<Dictionary<String, Any>> else{
+                    print("Erro ao desserializar response")
+                    return
+                }
+                for city in listCities {
+                    if let name = city["name"] as? String, let coord = city["coord"] as? Dictionary<String, Any>,
+                       let lat = coord["lat"] as? Double, let lng = coord["lon"] as? Double,
+                       let main = city["main"] as? Dictionary<String, Any>, let temp = main["temp"] as? Double {
+                        mockListWeaterApi.append(WeaterInfo(lat: String(lat), lng: String(lng), temperature: String(temp),
+                                                 city: name))
                     }
-//                let mockWheaterApi = WeaterInfo(lat: String(lat), lng: String(lon), temperature: String(temp), city: city)
+                }
                 sucess(mockListWeaterApi)
             }catch{
                 print("Erro ao desserializar info")
